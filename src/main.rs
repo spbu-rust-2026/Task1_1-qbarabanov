@@ -1,14 +1,12 @@
-use std::io::Read;
+use std::io::{self, Read};
 
 fn main() {
     let mut input = String::new();
 
-    std::io::stdin().read_to_string(&mut input).expect("Error!");
+    io::stdin().read_to_string(&mut input).expect("Error!");
+    Ok(());
+    let input = "3\n4\n";
 
-    check(&input);
-}
-
-fn check(input: &str) {
     let mut parts = input.split_whitespace();
 
     let first_number: i128 = parts
