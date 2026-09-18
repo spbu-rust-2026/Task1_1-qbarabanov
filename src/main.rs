@@ -4,7 +4,7 @@ fn main() {
     let mut input = String::new();
 
     io::stdin().read_to_string(&mut input).expect("Error!");
-    Ok(());
+
     let input = "3\n4\n";
 
     let mut parts = input.split_whitespace();
